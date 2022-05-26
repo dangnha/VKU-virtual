@@ -18,7 +18,7 @@
 }
 
 
-.tqd-badge-circle {
+.ndn-badge-circle {
     @apply text-xs text-center rounded-full px-1.5;
 }
 
@@ -43,8 +43,4 @@
 
 .ndn-button {
     @apply px-6 py-[18px] shadow-md uppercase text-white bg-black  text-xs leading-[18px] tracking-widest font-bold text-center;
-}
-
-.product-card {
-    @apply sm:mb-10 mb-2;
 }
