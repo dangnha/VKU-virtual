@@ -641,6 +641,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 350px;
 }
 
+.h-\[660px\]{
+  height: 660px;
+}
+
 .max-h-\[60px\]{
   max-height: 60px;
 }
@@ -793,6 +797,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(96 165 250 / var(--tw-bg-opacity));
 }
 
+.bg-black{
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-50{
   --tw-bg-opacity: 0.5;
 }
@@ -825,8 +834,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-image: url(./img/comp-pisi.jpg);
 }
 
-.bg-\[url\(\.\/img\/parallax-bg\.jpg\)\]{
-  background-image: url(./img/parallax-bg.jpg);
+.bg-\[url\(\.\/img\/overview\.jpg\)\]{
+  background-image: url(./img/overview.jpg);
 }
 
 .bg-cover{
@@ -1270,11 +1279,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .hover\:text-lime-400:hover{
   --tw-text-opacity: 1;
   color: rgb(163 230 53 / var(--tw-text-opacity));
-}
-
-.hover\:text-coffee-400:hover{
-  --tw-text-opacity: 1;
-  color: rgb(162 95 75 / var(--tw-text-opacity));
 }
 
 .hover\:opacity-10:hover{
