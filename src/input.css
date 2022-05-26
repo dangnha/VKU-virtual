@@ -1,0 +1,50 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.top-menu-item {
+    @apply cursor-pointer py-2 hover:text-gray-900 relative lg:after:absolute 
+    lg:after:bottom-0 lg:after:left-0 lg:after:bg-lime-400 lg:after:h-0.5 lg:after:w-0 hover:lg:after:w-full 
+    lg:after:transition-all lg:after:ease-in-out lg:after:duration-300;
+}
+
+.top-menu-item-active {
+    @apply text-gray-900 lg:after:bg-lime-400 lg:after:absolute 
+    lg:after:bottom-0 lg:after:left-0 lg:after:h-0.5 lg:after:w-full 
+    lg:after:transition-all lg:after:duration-300;
+}
+
+
+.tqd-badge-circle {
+    @apply text-xs text-center rounded-full px-1.5;
+}
+
+.top-menu-expanded {
+    @apply absolute top-[70px] z-50 w-full bg-white shadow-md text-center animate-slideDown;
+}
+.page-break {
+    @apply my-16 flex justify-center items-center; 
+}
+
+.page-break__content {
+    @apply text-xs mx-4 uppercase leading-4 text-center font-medium tracking-widest text-stone-500 ;
+}
+
+.page-break__line {
+    @apply w-9 h-[1px] bg-gray-200;
+}
+
+.ndn-button-page {
+    @apply px-6 py-[18px] shadow-md uppercase text-white bg-blue-400 rounded-full text-xs leading-[18px] tracking-widest font-bold text-center;
+}
+
+.ndn-button {
+    @apply px-6 py-[18px] shadow-md uppercase text-white bg-black  text-xs leading-[18px] tracking-widest font-bold text-center;
+}
+
+.product-card {
+    @apply sm:mb-10 mb-2;
+}
