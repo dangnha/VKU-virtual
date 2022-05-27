@@ -38,7 +38,7 @@
 }
 
 .ndn-button-page {
-    @apply px-6 py-[18px] shadow-md uppercase text-white bg-blue-400 rounded-full text-xs leading-[18px] tracking-widest font-bold text-center;
+    @apply px-6 py-[18px] shadow-md uppercase text-white rounded-full text-xs leading-[18px] tracking-widest font-bold text-center;
 }
 
 .ndn-button {
