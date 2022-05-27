@@ -470,6 +470,40 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
+.container{
+  width: 100%;
+}
+
+@media (min-width: 640px){
+  .container{
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px){
+  .container{
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px){
+  .container{
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px){
+  .container{
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px){
+  .container{
+    max-width: 1536px;
+  }
+}
+
 .fixed{
   position: fixed;
 }
@@ -545,8 +579,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0.75rem;
 }
 
-.mt-\[84px\]{
-  margin-top: 84px;
+.mt-\[120px\]{
+  margin-top: 120px;
 }
 
 .mb-\[120px\]{
@@ -599,6 +633,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mb-16{
   margin-bottom: 4rem;
+}
+
+.mt-\[84px\]{
+  margin-top: 84px;
 }
 
 .flex{
@@ -679,6 +717,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-\[100vw\]{
   width: 100vw;
+}
+
+.w-\[95\%\]{
+  width: 95%;
 }
 
 .min-w-\[375px\]{
@@ -802,11 +844,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(107 114 128 / var(--tw-bg-opacity));
 }
 
-.bg-black{
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
 .bg-opacity-50{
   --tw-bg-opacity: 0.5;
 }
@@ -837,6 +874,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .bg-\[url\(\.\/img\/comp-pisi\.jpg\)\]{
   background-image: url(./img/comp-pisi.jpg);
+}
+
+.bg-\[url\(\.\/img\/vinh-avt\.jpg\)\]{
+  background-image: url(./img/vinh-avt.jpg);
+}
+
+.bg-\[url\(\.\/img\/nha-avt\.jpg\)\]{
+  background-image: url(./img/nha-avt.jpg);
+}
+
+.bg-\[url\(\.\/img\/trung-avt\.jpg\)\]{
+  background-image: url(./img/trung-avt.jpg);
 }
 
 .bg-\[url\(\.\/img\/overview\.jpg\)\]{
@@ -882,6 +931,15 @@ Ensure the default browser behavior of the `hidden` attribute.
 .py-\[18px\]{
   padding-top: 18px;
   padding-bottom: 18px;
+}
+
+.py-3{
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.pl-1{
+  padding-left: 0.25rem;
 }
 
 .text-center{
@@ -935,6 +993,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 600;
 }
 
+.font-black{
+  font-weight: 900;
+}
+
 .font-bold{
   font-weight: 700;
 }
@@ -965,6 +1027,26 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .tracking-widest{
   letter-spacing: 0.1em;
+}
+
+.text-lime-500{
+  --tw-text-opacity: 1;
+  color: rgb(132 204 22 / var(--tw-text-opacity));
+}
+
+.text-yellow-600{
+  --tw-text-opacity: 1;
+  color: rgb(202 138 4 / var(--tw-text-opacity));
+}
+
+.text-red-600{
+  --tw-text-opacity: 1;
+  color: rgb(220 38 38 / var(--tw-text-opacity));
+}
+
+.text-blue-600{
+  --tw-text-opacity: 1;
+  color: rgb(37 99 235 / var(--tw-text-opacity));
 }
 
 .text-gray-500{
@@ -1034,6 +1116,15 @@ Ensure the default browser behavior of the `hidden` attribute.
 .outline-none{
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+.grayscale{
+  --tw-grayscale: grayscale(100%);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.filter{
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .top-menu-item{
@@ -1432,6 +1523,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   .lg\:px-24{
     padding-left: 6rem;
     padding-right: 6rem;
+  }
+
+  .lg\:py-6{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
   }
 
   .lg\:text-left{
