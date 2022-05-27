@@ -11,6 +11,8 @@
     <link href="../output.css" type="text/css" rel="stylesheet">
     <script src="../main.js" type="text/javascript" async></script>
     <title>Virtual VKU</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
@@ -18,14 +20,14 @@
         <div class="root font-Karla max-w-screen-2xl text-base mx-auto md:px-8 bg-white font-medium">
 
             <!-- Header -->
-            <div class="header py-6 mx-auto fixed top-0 bg-white left-0 right-0 z-50">
+            <div class="header py-6 mx-auto fixed top-0 bg-white left-0 right-0 z-50 shadow-xl">
                 <div class="nav flex flex-row justify-between items-center relative">
                     <div class="logo basic-2/6 text-center text-3xl font-semibold cursor-pointer px-7 lg:px-24 ">
-                        <a class="flex flex-col justify-center items-center" href="/VKU-virtual/public/">
+                        <a class="flex flex-col justify-center items-center" href="/">
                             <div class="font-semibold text-lime-500">Virtual</div>
                             <div class="flex flex-row">
-                                <div class="uppercase font-black text-yellow-600">v</div>
-                                <div class="uppercase font-black text-red-600">k</div>
+                                <div class="uppercase font-black text-red-600">v</div>
+                                <div class="uppercase font-black text-yellow-400">k</div>
                                 <div class="uppercase font-black text-blue-600">u</div>
                             </div>
                         </a>
@@ -35,19 +37,19 @@
 
                     <ul id="nav-menu" class=" hidden basis-3/6 lg:flex lg:justify-end lg:gap-9 uppercase text-sm text-gray-500">
                         <li class="top-menu-item">
-                            <a href="/VKU-virtual/public/">home</a>
+                            <a href="/">home</a>
                         </li>
                         <li class="top-menu-item">
-                            <a href="/VKU-virtual/public/mapdigital">digital map</a>
+                            <a href="/mapdigital">digital map</a>
                         </li>
                         <li class="top-menu-item top-menu-item-active">
-                            <a href="/VKU-virtual/public/group">club&groups</a>
+                            <a href="/group">club&groups</a>
                         </li>
                         <li class="top-menu-item">
-                            <a href="/VKU-virtual/public/contests">contests</a>
+                            <a href="/contests">contests</a>
                         </li>
                         <li class="top-menu-item">
-                            <a href="/VKU-virtual/public/contact">contact</a>
+                            <a href="/contact">contact</a>
                         </li>
                         <!-- <li class="top-menu-item top-menu-item-active">
                             <a href="https://github.com/dangnha" target="blank">dangnha</a>
@@ -78,7 +80,7 @@
             </div>
 
             <!-- Body page -->
-            <div id="body-page" class="mt-[84px]  mb-[120px]">
+            <div id="body-page" class="mt-[140px]  mb-[120px]">
 
 
                 <!-- break page -->
@@ -90,19 +92,30 @@
 
                 <!-- club & groups in vku-->
                 <div class="feature-mugs w-[90%] xl:w-[65%] mx-auto mb-24">
-                    <div class="grid grid-cols-1 lg:grid-cols-3 lg:gap-4 gap-8">
-                        <div class="clb-tag">
+                    <div class="ndn-clubs grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 pb-14">
+                        <div class="clb-tag m-2 rounded-3xl">
                             <div class="relative group z-10 h-[400px] bg-[url(./img/logo-hih.jpg)] bg-cover bg-no-repeat bg-center mb-9">
                                 <a class="z-20" href="#" alt="dangnha">
                                     <div class=" w-full h-full hover:bg-slate-900 hover:opacity-10 hover:transition-all hover:ease-in-out hover:duration-400">
 
                                     </div>
                                 </a>
-                                <a href="https://www.facebook.com/Tuthien.HandInHandVietHan" alt="dangnha" target="blank">
-                                    <div class="hidden group-hover:block text-while bg-blue-400 group-hover:animate-fadeIn z-40 absolute bottom-4 left-5 right-5 cursor-pointer ndn-button-page">
-                                        <i class="fa-brands fa-facebook"></i> hand in hand
+                                <a href="https://www.tiktok.com/@tuthien_hih3t" alt="dangnha" target="blank">
+                                    <div class="hidden group-hover:block text-while bg-black group-hover:animate-fadeIn z-40 absolute bottom-10 left-5 right-5 cursor-pointer ndn-button-page">
+                                        <i class="fa-brands fa-tiktok"></i> tiktok
                                     </div>
                                 </a>
+                                <a href="https://www.youtube.com/channel/UCfpW91HkMXqx-PFM4_-6ABA/featured" alt="dangnha" target="blank">
+                                    <div class="hidden group-hover:block text-while bg-red-400 group-hover:animate-fadeIn z-40 absolute bottom-[170px] left-5 right-5 cursor-pointer ndn-button-page">
+                                        <i class="fa-brands fa-youtube"></i> youtube
+                                    </div>
+                                </a>
+                                <a href="https://www.facebook.com/Tuthien.HandInHandVietHan" alt="dangnha" target="blank">
+                                    <div class="hidden group-hover:block text-while bg-blue-400 group-hover:animate-fadeIn z-40 absolute top-10 left-5 right-5 cursor-pointer ndn-button-page">
+                                        <i class="fa-brands fa-facebook"></i> facebook
+                                    </div>
+                                </a>
+
                             </div>
 
                             <a class="w-full cursor-pointer">
@@ -110,16 +123,26 @@
                             </a>
 
                         </div>
-                        <div class="clb-tag">
+                        <div class="clb-tag m-2 rounded-3xl">
                             <div class="relative group z-10 h-[400px] bg-[url(./img/logo-media.jpg)] bg-cover bg-no-repeat bg-center mb-9">
                                 <a class="z-20" href="#" alt="dangnha">
                                     <div class=" w-full h-full hover:bg-slate-900 hover:opacity-10 hover:transition-all hover:ease-in-out hover:duration-400">
 
                                     </div>
                                 </a>
-                                <a href="https://www.facebook.com/vkumedia/?ref=page_internal" alt="dangnha" target="blank">
-                                    <div class="hidden group-hover:block text-while bg-blue-400 group-hover:animate-fadeIn z-40 absolute bottom-4 left-5 right-5 cursor-pointer ndn-button-page">
-                                        <i class="fa-brands fa-facebook"></i>media
+                                <a href="https://www.tiktok.com" alt="dangnha" target="blank">
+                                    <div class="hidden group-hover:block text-while bg-black group-hover:animate-fadeIn z-40 absolute bottom-10 left-5 right-5 cursor-pointer ndn-button-page">
+                                        <i class="fa-brands fa-tiktok"></i> tiktok
+                                    </div>
+                                </a>
+                                <a href="https://www.youtube.com/channel/UC1cpkfqLNp6I1HgNy2MUhUg" alt="dangnha" target="blank">
+                                    <div class="hidden group-hover:block text-while bg-red-400 group-hover:animate-fadeIn z-40 absolute bottom-[170px] left-5 right-5 cursor-pointer ndn-button-page">
+                                        <i class="fa-brands fa-youtube"></i> youtube
+                                    </div>
+                                </a>
+                                <a href="https://www.facebook.com/vkumedia" alt="dangnha" target="blank">
+                                    <div class="hidden group-hover:block text-while bg-blue-400 group-hover:animate-fadeIn z-40 absolute top-10 left-5 right-5 cursor-pointer ndn-button-page">
+                                        <i class="fa-brands fa-facebook"></i> facebook
                                     </div>
                                 </a>
 
@@ -130,23 +153,213 @@
                             </a>
 
                         </div>
-                        <div class="clb-tag">
+                        <div class="clb-tag m-2 rounded-3xl">
                             <div class="relative group z-10 h-[400px] bg-[url(./img/logo-esport.jpg)] bg-cover bg-no-repeat bg-center mb-9">
                                 <a class="z-20" href="#" alt="dangnha">
                                     <div class=" w-full h-full hover:bg-slate-900 hover:opacity-10 hover:transition-all hover:ease-in-out hover:duration-400">
 
                                     </div>
                                 </a>
+                                <a href="https://www.tiktok.com" alt="dangnha" target="blank">
+                                    <div class="hidden group-hover:block text-while bg-black group-hover:animate-fadeIn z-40 absolute bottom-10 left-5 right-5 cursor-pointer ndn-button-page">
+                                        <i class="fa-brands fa-tiktok"></i> tiktok
+                                    </div>
+                                </a>
+                                <a href="https://www.youtube.com/watch?v=ENKuvMkq1GU&t=2s" alt="dangnha" target="blank">
+                                    <div class="hidden group-hover:block text-while bg-red-400 group-hover:animate-fadeIn z-40 absolute bottom-[170px] left-5 right-5 cursor-pointer ndn-button-page">
+                                        <i class="fa-brands fa-youtube"></i> youtube
+                                    </div>
+                                </a>
                                 <a href="https://www.facebook.com/clbesportvku" alt="dangnha" target="blank">
-                                    <div class="hidden group-hover:block group-hover:animate-fadeIn z-40 absolute bottom-4 left-5 right-5 cursor-pointer ndn-button-page">
-                                        <i class="fa-brands fa-facebook"></i>vku esports
+                                    <div class="hidden group-hover:block text-while bg-blue-400 group-hover:animate-fadeIn z-40 absolute top-10 left-5 right-5 cursor-pointer ndn-button-page">
+                                        <i class="fa-brands fa-facebook"></i> facebook
                                     </div>
                                 </a>
 
                             </div>
 
                             <a class="w-full cursor-pointer">
-                                <div class="text-center mb-4 text-xl leading-7 hover:text-lime-500 uppercase" href="#">VKU esports</div>
+                                <div class="text-center mb-4 text-xl leading-7 hover:text-lime-500 uppercase" href="#">esports</div>
+                            </a>
+
+                        </div>
+                        <div class="clb-tag m-2 rounded-3xl">
+                            <div class="relative group z-10 h-[400px] bg-[url(./img/logo-ndt.jpg)] bg-cover bg-no-repeat bg-center mb-9">
+                                <a class="z-20" href="#" alt="dangnha">
+                                    <div class=" w-full h-full hover:bg-slate-900 hover:opacity-10 hover:transition-all hover:ease-in-out hover:duration-400">
+
+                                    </div>
+                                </a>
+                                <a href="https://www.tiktok.com" alt="dangnha" target="blank">
+                                    <div class="hidden group-hover:block text-while bg-black group-hover:animate-fadeIn z-40 absolute bottom-10 left-5 right-5 cursor-pointer ndn-button-page">
+                                        <i class="fa-brands fa-tiktok"></i> tiktok
+                                    </div>
+                                </a>
+                                <a href="https://www.youtube.com/watch?v=ohbX-zt3rCY" alt="dangnha" target="blank">
+                                    <div class="hidden group-hover:block text-while bg-red-400 group-hover:animate-fadeIn z-40 absolute bottom-[170px] left-5 right-5 cursor-pointer ndn-button-page">
+                                        <i class="fa-brands fa-youtube"></i> youtube
+                                    </div>
+                                </a>
+                                <a href="https://www.facebook.com/ClbNhipDieuTreVKU" alt="dangnha" target="blank">
+                                    <div class="hidden group-hover:block text-while bg-blue-400 group-hover:animate-fadeIn z-40 absolute top-10 left-5 right-5 cursor-pointer ndn-button-page">
+                                        <i class="fa-brands fa-facebook"></i> facebook
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <a class="w-full cursor-pointer">
+                                <div class="text-center mb-4 text-xl leading-7 hover:text-lime-500 uppercase" href="#">nhịp điệu trẻ</div>
+                            </a>
+
+                        </div>
+                        <div class="clb-tag m-2 rounded-3xl">
+                            <div class="relative group z-10 h-[400px] bg-[url(./img/logo-kn.jpg)] bg-cover bg-no-repeat bg-center mb-9">
+                                <a class="z-20" href="#" alt="dangnha">
+                                    <div class=" w-full h-full hover:bg-slate-900 hover:opacity-10 hover:transition-all hover:ease-in-out hover:duration-400">
+
+                                    </div>
+                                </a>
+                                <a href="https://www.tiktok.com" alt="dangnha" target="blank">
+                                    <div class="hidden group-hover:block text-while bg-black group-hover:animate-fadeIn z-40 absolute bottom-10 left-5 right-5 cursor-pointer ndn-button-page">
+                                        <i class="fa-brands fa-tiktok"></i> tiktok
+                                    </div>
+                                </a>
+                                <a href="https://www.youtube.com/watch?v=K5ItZT2yQCg" alt="dangnha" target="blank">
+                                    <div class="hidden group-hover:block text-while bg-red-400 group-hover:animate-fadeIn z-40 absolute bottom-[170px] left-5 right-5 cursor-pointer ndn-button-page">
+                                        <i class="fa-brands fa-youtube"></i> youtube
+                                    </div>
+                                </a>
+                                <a href="https://www.facebook.com/vkuskillsclub" alt="dangnha" target="blank">
+                                    <div class="hidden group-hover:block text-while bg-blue-400 group-hover:animate-fadeIn z-40 absolute top-10 left-5 right-5 cursor-pointer ndn-button-page">
+                                        <i class="fa-brands fa-facebook"></i> facebook
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <a class="w-full cursor-pointer">
+                                <div class="text-center mb-4 text-xl leading-7 hover:text-lime-500 uppercase" href="#">kỹ năng</div>
+                            </a>
+
+                        </div>
+                        <div class="clb-tag m-2 rounded-3xl">
+                            <div class="relative group z-10 h-[400px] bg-[url(./img/logo-vlb.jpg)] bg-cover bg-no-repeat bg-center mb-9">
+                                <a class="z-20" href="#" alt="dangnha">
+                                    <div class=" w-full h-full hover:bg-slate-900 hover:opacity-10 hover:transition-all hover:ease-in-out hover:duration-400">
+
+                                    </div>
+                                </a>
+                                <a href="https://www.tiktok.com" alt="dangnha" target="blank">
+                                    <div class="hidden group-hover:block text-while bg-black group-hover:animate-fadeIn z-40 absolute bottom-10 left-5 right-5 cursor-pointer ndn-button-page">
+                                        <i class="fa-brands fa-tiktok"></i> tiktok
+                                    </div>
+                                </a>
+                                <a href="https://www.youtube.com/watch?v=8HCXDV1YBWk" alt="dangnha" target="blank">
+                                    <div class="hidden group-hover:block text-while bg-red-400 group-hover:animate-fadeIn z-40 absolute bottom-[170px] left-5 right-5 cursor-pointer ndn-button-page">
+                                        <i class="fa-brands fa-youtube"></i> youtube
+                                    </div>
+                                </a>
+                                <a href="https://www.facebook.com/volleyball.vku/" alt="dangnha" target="blank">
+                                    <div class="hidden group-hover:block text-while bg-blue-400 group-hover:animate-fadeIn z-40 absolute top-10 left-5 right-5 cursor-pointer ndn-button-page">
+                                        <i class="fa-brands fa-facebook"></i> facebook
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <a class="w-full cursor-pointer">
+                                <div class="text-center mb-4 text-xl leading-7 hover:text-lime-500 uppercase" href="#">Bóng chuyền</div>
+                            </a>
+
+                        </div>
+                        <div class="clb-tag m-2 rounded-3xl">
+                            <div class="relative group z-10 h-[400px] bg-[url(./img/logo-krt.jpg)] bg-cover bg-no-repeat bg-center mb-9">
+                                <a class="z-20" href="#" alt="dangnha">
+                                    <div class=" w-full h-full hover:bg-slate-900 hover:opacity-10 hover:transition-all hover:ease-in-out hover:duration-400">
+
+                                    </div>
+                                </a>
+                                <a href="https://www.tiktok.com" alt="dangnha" target="blank">
+                                    <div class="hidden group-hover:block text-while bg-black group-hover:animate-fadeIn z-40 absolute bottom-10 left-5 right-5 cursor-pointer ndn-button-page">
+                                        <i class="fa-brands fa-tiktok"></i> tiktok
+                                    </div>
+                                </a>
+                                <a href="https://www.youtube.com/watch?v=krcfQ1SCu8Q" alt="dangnha" target="blank">
+                                    <div class="hidden group-hover:block text-while bg-red-400 group-hover:animate-fadeIn z-40 absolute bottom-[170px] left-5 right-5 cursor-pointer ndn-button-page">
+                                        <i class="fa-brands fa-youtube"></i> youtube
+                                    </div>
+                                </a>
+                                <a href="https://www.facebook.com/KarateVKU/" alt="dangnha" target="blank">
+                                    <div class="hidden group-hover:block text-while bg-blue-400 group-hover:animate-fadeIn z-40 absolute top-10 left-5 right-5 cursor-pointer ndn-button-page">
+                                        <i class="fa-brands fa-facebook"></i> facebook
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <a class="w-full cursor-pointer">
+                                <div class="text-center mb-4 text-xl leading-7 hover:text-lime-500 uppercase" href="#">karate</div>
+                            </a>
+
+                        </div>
+                        <div class="clb-tag m-2 rounded-3xl">
+                            <div class="relative group z-10 h-[400px] bg-[url(./img/logo-fbc.jpg)] bg-cover bg-no-repeat bg-center mb-9">
+                                <a class="z-20" href="#" alt="dangnha">
+                                    <div class=" w-full h-full hover:bg-slate-900 hover:opacity-10 hover:transition-all hover:ease-in-out hover:duration-400">
+
+                                    </div>
+                                </a>
+                                <a href="https://www.tiktok.com" alt="dangnha" target="blank">
+                                    <div class="hidden group-hover:block text-while bg-black group-hover:animate-fadeIn z-40 absolute bottom-10 left-5 right-5 cursor-pointer ndn-button-page">
+                                        <i class="fa-brands fa-tiktok"></i> tiktok
+                                    </div>
+                                </a>
+                                <a href="https://www.youtube.com/watch?v=_nGXegbx4NE" alt="dangnha" target="blank">
+                                    <div class="hidden group-hover:block text-while bg-red-400 group-hover:animate-fadeIn z-40 absolute bottom-[170px] left-5 right-5 cursor-pointer ndn-button-page">
+                                        <i class="fa-brands fa-youtube"></i> youtube
+                                    </div>
+                                </a>
+                                <a href="https://www.facebook.com/NguyenDinhTai2306" alt="dangnha" target="blank">
+                                    <div class="hidden group-hover:block text-while bg-blue-400 group-hover:animate-fadeIn z-40 absolute top-10 left-5 right-5 cursor-pointer ndn-button-page">
+                                        <i class="fa-brands fa-facebook"></i> facebook
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <a class="w-full cursor-pointer">
+                                <div class="text-center mb-4 text-xl leading-7 hover:text-lime-500 uppercase" href="#">football</div>
+                            </a>
+
+                        </div>
+                        <div class="clb-tag m-2 rounded-3xl">
+                            <div class="relative group z-10 h-[400px] bg-[url(./img/logo-cl.jpg)] bg-cover bg-no-repeat bg-center mb-9">
+                                <a class="z-20" href="#" alt="dangnha">
+                                    <div class=" w-full h-full hover:bg-slate-900 hover:opacity-10 hover:transition-all hover:ease-in-out hover:duration-400">
+
+                                    </div>
+                                </a>
+                                <a href="https://www.tiktok.com" alt="dangnha" target="blank">
+                                    <div class="hidden group-hover:block text-while bg-black group-hover:animate-fadeIn z-40 absolute bottom-10 left-5 right-5 cursor-pointer ndn-button-page">
+                                        <i class="fa-brands fa-tiktok"></i> tiktok
+                                    </div>
+                                </a>
+                                <a href="https://www.youtube.com/watch?v=ETP60XRtMeY" alt="dangnha" target="blank">
+                                    <div class="hidden group-hover:block text-while bg-red-400 group-hover:animate-fadeIn z-40 absolute bottom-[170px] left-5 right-5 cursor-pointer ndn-button-page">
+                                        <i class="fa-brands fa-youtube"></i> youtube
+                                    </div>
+                                </a>
+                                <a href="https://www.facebook.com/clbcaulongvku" alt="dangnha" target="blank">
+                                    <div class="hidden group-hover:block text-while bg-blue-400 group-hover:animate-fadeIn z-40 absolute top-10 left-5 right-5 cursor-pointer ndn-button-page">
+                                        <i class="fa-brands fa-facebook"></i> facebook
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <a class="w-full cursor-pointer">
+                                <div class="text-center mb-4 text-xl leading-7 hover:text-lime-500 uppercase" href="#">Cầu lông</div>
                             </a>
 
                         </div>
@@ -169,7 +382,7 @@
             <!-- footer -->
 
             <div class="footer w-full h-[350px] bg-white">
-                <div class="flex md:flex-row flex-col lg:gap-28 gap-8 xl:w-[65%] w-90% mx-auto">
+                <div class="flex md:flex-row flex-col lg:gap-28 gap-8 xl:w-[65%] w-80% mx-auto">
                     <div class="basis-5/7 flex flex-col">
                         <div class="text-xl mb-4 font-bold text-center lg:text-left">Vietnam Korea University of information and communication technology</div>
                         <div class="text-sm mb-12 text-gray-500 opacity-90 text-center lg:text-left">
@@ -182,19 +395,19 @@
                         <div class="uppercase text-sm text-center lg:text-left text-gray-600 mb-4">MENU</div>
                         <ul class="flex flex-col gap-2">
                             <li class="text-sm text-center lg:text-left text-gray-500 opacity-90 leading-7 hover:text-lime-400">
-                                <a href="/VKU-virtual/public/">Home</a>
+                                <a href="/">Home</a>
                             </li>
                             <li class="text-sm text-center lg:text-left text-gray-500 opacity-90 leading-7 hover:text-lime-400">
-                                <a href="/VKU-virtual/public/mapdigital">Digital Map</a>
+                                <a href="/mapdigital">Digital Map</a>
                             </li>
                             <li class="text-sm text-center lg:text-left text-gray-500 opacity-90 leading-7 hover:text-lime-400">
-                                <a href="/VKU-virtual/public/group">Club&Groups</a>
+                                <a href="/group">Club&Groups</a>
                             </li>
                             <li class="text-sm text-center lg:text-left text-gray-500 opacity-90 leading-7 hover:text-lime-400">
-                                <a href="/VKU-virtual/public/contests">Contests</a>
+                                <a href="/contests">Contests</a>
                             </li>
                             <li class="text-sm text-center lg:text-left text-gray-500 opacity-90 leading-7 hover:text-lime-400">
-                                <a href="/VKU-virtual/public/contact/">Contact</a>
+                                <a href="/contact/">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -206,11 +419,11 @@
                             </li>
                             <li class="">
                                 <div class="logo basic-2/6 text-center text-3xl cursor-pointer">
-                                    <a class="flex flex-col justify-center items-center" href="/VKU-virtual/public/">
+                                    <a class="flex flex-col justify-center items-center" href="/">
                                         <div class="font-semibold text-lime-500">Virtual</div>
                                         <div class="flex flex-row">
-                                            <div class="uppercase font-black text-yellow-600">v</div>
-                                            <div class="uppercase font-black text-red-600">k</div>
+                                            <div class="uppercase font-black text-red-600">v</div>
+                                            <div class="uppercase font-black text-yellow-400">k</div>
                                             <div class="uppercase font-black text-blue-600">u</div>
                                         </div>
                                     </a>
@@ -235,6 +448,12 @@
 
         </div>
     </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="./app.js"></script>
 </body>
 
 </html>

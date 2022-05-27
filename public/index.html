@@ -10,23 +10,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./output.css" type="text/css" rel="stylesheet">
     <script src="./main.js" type="text/javascript" async></script>
+    <link rel="stylesheet" href="./wow/animate.css">
     <title>Virtual VKU</title>
 </head>
+
 
 <body>
     <div>
         <div class="root font-Karla max-w-screen-2xl text-base mx-auto md:px-8 bg-white font-medium">
 
             <!-- Header -->
-            <div class="header py-6 mx-auto fixed top-0 bg-white left-0 right-0 z-50">
+            <div class="header py-6 mx-auto fixed top-0 bg-white left-0 right-0 z-50 shadow-xl">
                 <div class="nav flex flex-row justify-between items-center relative">
                     <div class="logo basic-2/6 text-center text-3xl cursor-pointer px-7 lg:px-24 ">
 
-                        <a class="flex flex-col justify-center items-center" href="/VKU-virtual/public/">
+                        <a class="flex flex-col justify-center items-center" href="/">
                             <div class="font-semibold text-lime-500">Virtual</div>
                             <div class="flex flex-row">
-                                <div class="uppercase font-black text-yellow-600">v</div>
-                                <div class="uppercase font-black text-red-600">k</div>
+                                <div class="uppercase font-black text-red-600">v</div>
+                                <div class="uppercase font-black text-yellow-400">k</div>
                                 <div class="uppercase font-black text-blue-600">u</div>
                             </div>
                         </a>
@@ -36,19 +38,19 @@
 
                     <ul id="nav-menu" class=" hidden basis-3/6 lg:flex lg:justify-end lg:gap-9 uppercase text-sm text-gray-500">
                         <li class="top-menu-item top-menu-item-active">
-                            <a href="/VKU-virtual/public/">home</a>
+                            <a href="/">home</a>
                         </li>
                         <li class="top-menu-item">
-                            <a href="/VKU-virtual/public/mapdigital/">digital map</a>
+                            <a href="/mapdigital/">digital map</a>
                         </li>
                         <li class="top-menu-item">
-                            <a href="/VKU-virtual/public/group/">club&groups</a>
+                            <a href="/group/">club&groups</a>
                         </li>
                         <li class="top-menu-item">
-                            <a href="/VKU-virtual/public/contests/">contests</a>
+                            <a href="/contests/">contests</a>
                         </li>
                         <li class="top-menu-item">
-                            <a href="/VKU-virtual/public/contact/">contact</a>
+                            <a href="/contact/">contact</a>
                         </li>
                         <!-- <li class="top-menu-item top-menu-item-active">
                             <a href="https://github.com/dangnha" target="blank">dangnha</a>
@@ -81,13 +83,13 @@
             <!-- Body page -->
             <div id="body-page" class="mt-[120px]  mb-[120px]">
                 <!-- Slide -->
-                <div class="slide h-[530px] bg-[url(./img/map-slider.jpg)] bg-cover bg-no-repeat bg-center">
+                <div class="wow bounceInUp slide h-[530px] bg-[url(./img/map-slider.jpg)] bg-cover bg-no-repeat bg-center">
                     <div class="w-full h-full flex justify-center items-center bg-gray-900 bg-opacity-50">
                         <div class="text-lime-200 text-center">
                             <div class="tracking-widest uppercase text-2xl opacity-80">A digital map of</div>
                             <div class="text-5xl my-3 ">VietNam Korean University</div>
 
-                            <a href="/VKU-virtual/public/mapdigital">
+                            <a href="/mapdigital">
                                 <button class="tracking-widest uppercase text-xl bg-white text-lime-700 outline-none px-6 py-[18px] font-bold hover:bg-slate-200">
                                 visit now
                             </button>
@@ -97,16 +99,18 @@
                 </div>
 
                 <!-- break page -->
-                <div class="page-break">
+                <div class="page-break wow slideInRight">
                     <div class="page-break__line"></div>
                     <div class="page-break__content">Introduce Our university</div>
                     <div class="page-break__line"></div>
                 </div>
 
                 <!-- content -->
-                <div class="content-video flex lg:flex-row flex-col justify-center mx-auto items-center gap-10 xl:w-[65%] w-[90%]">
-                    <div class="basis-1/2">
-                        <iframe class="w-full h-full object-cover lg:min-h-[350px] min-h-[450px] lg:min-w-0 min-w-[375px]" src="https://www.youtube.com/embed/oT47WpwVFOc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                <div class="wow slideInRight content-video flex lg:flex-row flex-col justify-center mx-auto items-center gap-10 xl:w-[65%] w-[90%]">
+                    <div class="basis-1/2 ">
+                        <!-- <iframe  src="https://www.youtube.com/embed/oT47WpwVFOc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe> -->
+                        <iframe class="w-full h-full object-cover lg:min-h-[350px] min-h-[450px] lg:min-w-0 min-w-[350px] mx-auto" width="560" height="315" src="https://www.youtube.com/embed/hOs-T-XFlFI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
                     </div>
                     <div class="basis-1/2 w-full h-full flex flex-col justify-center items-center lg:text-left text-center">
@@ -125,14 +129,14 @@
                 </div>
 
                 <!-- break page -->
-                <div class="page-break">
+                <div class="page-break wow slideInLeft">
                     <div class="page-break__line"></div>
                     <div class="page-break__content">club and groups in vku</div>
                     <div class="page-break__line"></div>
                 </div>
 
                 <!-- club & groups in vku-->
-                <div class="feature-mugs w-[90%] xl:w-[65%] mx-auto mb-24">
+                <div class="feature-mugs w-[90%] xl:w-[65%] mx-auto mb-24 wow slideInLeft">
                     <div class="grid grid-cols-1 lg:grid-cols-3 lg:gap-4 gap-8">
                         <div class="clb-tag">
                             <div class="relative group z-10 h-[400px] bg-[url(./img/logo-hih.jpg)] bg-cover bg-no-repeat bg-center mb-9">
@@ -181,7 +185,7 @@
                                     </div>
                                 </a>
                                 <a href="https://www.facebook.com/clbesportvku" alt="dangnha" target="blank">
-                                    <div class="hidden group-hover:block group-hover:animate-fadeIn z-40 absolute bottom-4 left-5 right-5 cursor-pointer ndn-button-page">
+                                    <div class="hidden group-hover:block text-while bg-blue-400 group-hover:animate-fadeIn z-40 absolute bottom-4 left-5 right-5 cursor-pointer ndn-button-page">
                                         <i class="fa-brands fa-facebook"></i>vku esports
                                     </div>
                                 </a>
@@ -195,7 +199,7 @@
                         </div>
                     </div>
                     <div class="w-full max-h-[60px] flex justify-center mt-6">
-                        <a href="/VKU-virtual/public/group" class="mx-auto">
+                        <a href="/group" class="mx-auto">
                             <button class="ndn-button cursor-pointer flex flex-row justify-center items-center hover:text-lime-500 hover:bg-slate-100">
                             <span>View more </span>
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -207,14 +211,14 @@
                 </div>
 
                 <!-- break page -->
-                <div class="page-break">
+                <div class="page-break wow slideInRight">
                     <div class="page-break__line"></div>
                     <div class="page-break__content">Competitions in vku</div>
                     <div class="page-break__line"></div>
                 </div>
 
                 <!-- Contests -->
-                <div class="competitions w-[90%] xl:w-[65%] mx-auto mb-2 lg:mb-24 grid lg:grid-cols-2 grid-row-2 gap-12">
+                <div class="wow slideInRight competitions w-[90%] xl:w-[65%] mx-auto mb-2 lg:mb-24 grid lg:grid-cols-2 grid-row-2 gap-12">
                     <div class="basis-1/2 flex flex-col gap-6 justify-center lg:text-left text-center ">
                         <div class="text-2xl">
                             Outstanding contests for students of VKU
@@ -227,7 +231,7 @@
                             If you want to learn more about contests, let's click this button.
                         </div>
                         <div class="w-full min-h-[60px] flex lg:justify-start justify-center">
-                            <a href="/VKU-virtual/public/contests" class="">
+                            <a href="/contests" class="">
                                 <button class="ndn-button cursor-pointer flex flex-row justify-center items-center hover:text-lime-500 hover:bg-slate-100">
                                 <span>View more </span>
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -238,18 +242,18 @@
                         </div>
                     </div>
                     <div class="basis 1/2 grid lg:grid-row-2 md:grid-col-3 gap-5 lg:col-start-2 row-start-1">
-                        <div class="h-[205px] rounded-xl bg-[url(./img/comp-bwd.jpg)] bg-cover bg-no-repeat bg-center">
+                        <div class="hover:cursor-pointer hover:animate-pulse animated hover:zoomIn h-[205px] rounded-xl bg-[url(./img/comp-bwd.jpg)] bg-cover bg-no-repeat bg-center">
 
                         </div>
                         <div class="grid grid-cols-2 gap-5">
-                            <div class="hidden md:block h-[205px] rounded-xl bg-[url(./img/comp-rbc.jpg)] bg-cover bg-no-repeat bg-center"></div>
-                            <div class="hidden md:block h-[205px] rounded-xl bg-[url(./img/comp-pisi.jpg)] bg-cover bg-no-repeat bg-center"></div>
+                            <div class="hover:cursor-pointer hover:animate-pulse hidden md:block h-[205px] rounded-xl bg-[url(./img/comp-rbc.jpg)] bg-cover bg-no-repeat bg-center"></div>
+                            <div class="hover:cursor-pointer hover:animate-pulse hidden md:block h-[205px] rounded-xl bg-[url(./img/comp-pisi.jpg)] bg-cover bg-no-repeat bg-center"></div>
                         </div>
                     </div>
                 </div>
 
                 <!-- break page -->
-                <div class="page-break">
+                <div class="page-break wow bounceInDown">
                     <div class="page-break__line"></div>
                     <div class="page-break__content">members of our team</div>
                     <div class="page-break__line"></div>
@@ -257,11 +261,11 @@
 
                 <!-- members -->
 
-                <div class="flex flex-col justify-center items-center shadow-xl mb-10">
+                <div class="flex flex-col justify-center items-center mb-10 wow bounceInDown">
                     <div class="uppercase text-3xl font-bold mb-14">pencil group</div>
 
                     <div class="flex flex-col md:flex-row gap-7 xl:w-[65%] w-[90%] md:h-[500px]">
-                        <div class="w-full h-[400px] shadow-2xl">
+                        <div class="hover:cursor-pointer hover:animate-pulse w-full h-[400px] shadow-2xl">
                             <div class="mx-auto w-[200px] h-[200px] bg-[url(./img/vinh-avt.jpg)] bg-cover bg-no-repeat bg-center mb-6">
 
                             </div>
@@ -277,7 +281,7 @@
                             </div>
                         </div>
 
-                        <div class="w-full h-[400px] shadow-2xl">
+                        <div class="hover:cursor-pointer hover:animate-pulse w-full h-[400px] shadow-2xl">
                             <div class="mx-auto w-[200px] h-[200px] bg-[url(./img/nha-avt.jpg)] bg-cover bg-no-repeat bg-center mb-6">
 
                             </div>
@@ -293,7 +297,7 @@
                             </div>
                         </div>
 
-                        <div class="w-full h-[400px] shadow-2xl">
+                        <div class="hover:cursor-pointer hover:animate-pulse w-full h-[400px] shadow-2xl">
                             <div class="mx-auto w-[200px] h-[200px] bg-[url(./img/trung-avt.jpg)] bg-cover bg-no-repeat bg-center mb-6">
 
                             </div>
@@ -313,7 +317,7 @@
                 </div>
 
                 <!-- background const -->
-                <div class="parallax-bg h-[400px] mb-24 bg-fixed bg-[url(./img/overview.jpg)] bg-cover bg-no-repeat bg-center w-[100vw] relative left-[calc(-50vw_+_50%)]">
+                <div class="wow parallax-bg h-[400px] mb-24 bg-fixed bg-[url(./img/overview.jpg)] bg-cover bg-no-repeat bg-center w-[100vw] relative left-[calc(-50vw_+_50%)]">
 
                 </div>
 
@@ -325,7 +329,7 @@
 
             <!-- footer -->
 
-            <div class="footer w-full h-[350px] bg-white">
+            <div class="footer w-full h-[350px] bg-white wow">
                 <div class="flex md:flex-row flex-col lg:gap-28 gap-8 xl:w-[65%] w-90% mx-auto">
                     <div class="basis-5/7 flex flex-col">
                         <div class="text-xl mb-4 font-bold text-center lg:text-left">Vietnam Korea University of information and communication technology</div>
@@ -339,19 +343,19 @@
                         <div class="uppercase text-sm text-center lg:text-left text-gray-600 mb-4">MENU</div>
                         <ul class="flex flex-col gap-2">
                             <li class="text-sm text-center lg:text-left text-gray-500 opacity-90 leading-7 hover:text-lime-400">
-                                <a href="/VKU-virtual/public/">Home</a>
+                                <a href="/">Home</a>
                             </li>
                             <li class="text-sm text-center lg:text-left text-gray-500 opacity-90 leading-7 hover:text-lime-400">
-                                <a href="/VKU-virtual/public/mapdigital">Digital Map</a>
+                                <a href="/mapdigital">Digital Map</a>
                             </li>
                             <li class="text-sm text-center lg:text-left text-gray-500 opacity-90 leading-7 hover:text-lime-400">
-                                <a href="/VKU-virtual/public/group">Club&Groups</a>
+                                <a href="/group">Club&Groups</a>
                             </li>
                             <li class="text-sm text-center lg:text-left text-gray-500 opacity-90 leading-7 hover:text-lime-400">
-                                <a href="/VKU-virtual/public/contests">Contests</a>
+                                <a href="/contests">Contests</a>
                             </li>
                             <li class="text-sm text-center lg:text-left text-gray-500 opacity-90 leading-7 hover:text-lime-400">
-                                <a href="/VKU-virtual/public/contact/">Contact</a>
+                                <a href="/contact/">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -363,11 +367,11 @@
                             </li>
                             <li class="">
                                 <div class="logo basic-2/6 text-center text-3xl cursor-pointer">
-                                    <a class="flex flex-col justify-center items-center" href="/VKU-virtual/public/">
+                                    <a class="flex flex-col justify-center items-center" href="/">
                                         <div class="font-semibold text-lime-500">Virtual</div>
                                         <div class="flex flex-row">
-                                            <div class="uppercase font-black text-yellow-600">v</div>
-                                            <div class="uppercase font-black text-red-600">k</div>
+                                            <div class="uppercase font-black text-red-600">v</div>
+                                            <div class="uppercase font-black text-yellow-400">k</div>
                                             <div class="uppercase font-black text-blue-600">u</div>
                                         </div>
                                     </a>
@@ -392,6 +396,12 @@
 
         </div>
     </div>
+
+    <script src="./wow/wow.min.js" type="text/javascript"></script>
+    <script>
+        new WOW().init();
+    </script>
+
 </body>
 
 </html>
