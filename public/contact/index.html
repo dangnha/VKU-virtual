@@ -11,6 +11,10 @@
     <link href="../output.css" type="text/css" rel="stylesheet">
     <script src="../main.js" type="text/javascript" async></script>
     <title>Virtual VKU</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -21,11 +25,11 @@
             <div class="header py-6 mx-auto fixed top-0 bg-white left-0 right-0 z-50">
                 <div class="nav flex flex-row justify-between items-center relative">
                     <div class="logo basic-2/6 text-center text-3xl font-semibold cursor-pointer px-7 lg:px-24 ">
-                        <a class="flex flex-col justify-center items-center" href="/">
+                        <a class="flex flex-col justify-center items-center" href="/public/">
                             <div class="font-semibold text-lime-500">Virtual</div>
                             <div class="flex flex-row">
-                                <div class="uppercase font-black text-red-600">v</div>
-                                <div class="uppercase font-black text-yellow-400">k</div>
+                                <div class="uppercase font-black text-yellow-600">v</div>
+                                <div class="uppercase font-black text-red-600">k</div>
                                 <div class="uppercase font-black text-blue-600">u</div>
                             </div>
                         </a>
@@ -35,19 +39,19 @@
 
                     <ul id="nav-menu" class=" hidden basis-3/6 lg:flex lg:justify-end lg:gap-9 uppercase text-sm text-gray-500">
                         <li class="top-menu-item">
-                            <a href="/">home</a>
+                            <a href="/public/">home</a>
                         </li>
                         <li class="top-menu-item">
-                            <a href="/mapdigital">digital map</a>
+                            <a href="/public/mapdigital">digital map</a>
                         </li>
                         <li class="top-menu-item">
-                            <a href="/group">club&groups</a>
+                            <a href="/public/group">club&groups</a>
                         </li>
                         <li class="top-menu-item">
-                            <a href="/contests">contests</a>
+                            <a href="/public/contests">contests</a>
                         </li>
                         <li class="top-menu-item top-menu-item-active">
-                            <a href="/contract">contract</a>
+                            <a href="/public/contract">contract</a>
                         </li>
                         <!-- <li class="top-menu-item top-menu-item-active">
                             <a href="https://github.com/dangnha" target="blank">dangnha</a>
@@ -78,45 +82,54 @@
             </div>
 
             <!-- Body page -->
-            <div class="mt-[120px] xl:w-[70%] w-[90%] mx-auto mb-[120px] bg-lime-200 lg:h-auto h-[12 00px] z-0 flex flex-col justify-center gap-10">
-                <div class="basis-1/6 grid lg:grid-cols-3 grid-cols-1 gap-7 h-[150px] w-[65%] mx-auto mt-8">
-                    <div class="flex text-white text-center shadow-xl flex-row gap-5 justify-center items-center rounded-2xl bg-lime-600 ">
-                        <i class="fa-solid fa-map-location-dot ml-5"></i>
-                        <div class="text-sm min-h-[80px] min-w-[80px] flex items-center mr-5">470 Đường Trần Đại Nghĩa, Hoà Hải, Ngũ Hành Sơn, Đà Nẵng.</div>
+            <!-- <div class="mt-[120px] xl:w-[70%] w-[90%] mx-auto mb-[120px] lg:h-auto h-[900px] z-0 flex flex-col justify-center gap-10"> -->
+            <div class="container bg-slate-400 mt-[130px] xl:w-[70%] w-[90%] mx-auto mb-[120px] lg:h-auto h-[900px] z-0 flex flex-col justify-center gap-8">
+                <h1 class="brand uppercase text-2xl"><span>Contact to our group</span> </h1>
+                <div class="wrapper">
+                    <div class="company-info">
+                        <h3>Pencil Group</h3>
+                        <ul>
+                            <li><i class="fa fa-road"></i> 44 Something st</li>
+                            <li><i class="fa fa-phone"></i> (555) 555-5555</li>
+                            <li><i class="fa fa-envelope"></i> test@raj.test</li>
+                        </ul>
                     </div>
-                    <div class="flex text-white text-center shadow-xl flex-row gap-5 justify-center items-center rounded-2xl bg-lime-600 ">
-                        <i class="fa-solid fa-phone"></i>
-                        <div class="text-sm min-h-[80px] min-w-[80px] text-white text-center flex items-center">
-                            <span>0583654158</span>
-                        </div>
-                    </div>
-                    <div class="flex text-white text-center shadow-xl flex-row gap-2 justify-center items-center rounded-2xl bg-lime-600 ">
-                        <i class="fa-solid fa-envelope ml-5"></i>
-                        <div class="text-sm min-h-[80px] min-w-[80px] flex gap-1 items-center text-white text-center">
-                            trungpq.21it@vku.udn.vn
-                        </div>
+                    <div class="contact">
+                        <h3>Email Us</h3>
+                        <div class="alert">Your message has been sent</div>
+                        <form id="contactForm">
+                            <p class="full">
+                                <label>Name</label>
+                                <input type="text" name="name" id="name" required>
+                            </p>
+                            <p class="full">
+                                <label>Company</label>
+                                <input type="text" name="company" id="company">
+                            </p>
+                            <p class="full">
+                                <label>Email Address</label>
+                                <input type="email" name="email" id="email" required>
+                            </p>
+                            <p class="full">
+                                <label>Phone Number</label>
+                                <input type="text" name="phone" id="phone">
+                            </p>
+                            <p class="full">
+                                <label>Message</label>
+                                <textarea name="message" rows="5" id="message"></textarea>
+                            </p>
+                            <p class="full">
+                                <button type="submit">Submit</button>
+                            </p>
+                        </form>
                     </div>
                 </div>
-
-                <div class="basis-4/6 w-[65%] mx-auto bg-lime-600 shadow-xl rounded-2xl h-[500px] lg:h-auto">
-                    <div class="flex lg:flex-row flex-col justify-center items-center gap-9 my-6 mx-8">
-                        <div class="flex flex-col gap-8 justify-center items-center">
-                            <div class="text-4xl text-white uppercase">Contact Form</div>
-
-                            <div><input class="text-lg tracking-wider font-medium text-gray-600" type="text" placeholder="Name"></div>
-                            <div><input class="text-lg tracking-wider font-medium text-gray-600" type="email" placeholder="Email"></div>
-                            <div><input class="text-lg tracking-wider font-medium text-gray-600" type="phone" placeholder="Phone number"></div>
-                        </div>
-                        <div><textarea class="" name="" id="" cols="25" rows="10" placeholder="Message"></textarea></div>
-                    </div>
-                </div>
-
-
-                <a href="#" class="flex justify-center mb-8">
-                    <button class="uppercase text-white hover:bg-slate-300 hover:text-gray-500 text-2xl py-3 px-5 bg-lime-600 min-w-[200px]">send</button>
-                </a>
-
             </div>
+
+            <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+            <script src="main.js"></script>
+
+            <!-- </div> -->
             <!-- footer -->
 
             <div class="footer w-full h-[350px] bg-white">
@@ -133,19 +146,19 @@
                         <div class="uppercase text-sm text-center lg:text-left text-gray-600 mb-4">MENU</div>
                         <ul class="flex flex-col gap-2">
                             <li class="text-sm text-center lg:text-left text-gray-500 opacity-90 leading-7 hover:text-lime-400">
-                                <a href="/">Home</a>
+                                <a href="/public/">Home</a>
                             </li>
                             <li class="text-sm text-center lg:text-left text-gray-500 opacity-90 leading-7 hover:text-lime-400">
-                                <a href="/mapdigital">Digital Map</a>
+                                <a href="/public/mapdigital">Digital Map</a>
                             </li>
                             <li class="text-sm text-center lg:text-left text-gray-500 opacity-90 leading-7 hover:text-lime-400">
-                                <a href="/group">Club&Groups</a>
+                                <a href="/public/group">Club&Groups</a>
                             </li>
                             <li class="text-sm text-center lg:text-left text-gray-500 opacity-90 leading-7 hover:text-lime-400">
-                                <a href="/contests">Contests</a>
+                                <a href="/public/contests">Contests</a>
                             </li>
                             <li class="text-sm text-center lg:text-left text-gray-500 opacity-90 leading-7 hover:text-lime-400">
-                                <a href="/contact/">Contact</a>
+                                <a href="/public/contact/">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -157,11 +170,11 @@
                             </li>
                             <li class="">
                                 <div class="logo basic-2/6 text-center text-3xl cursor-pointer">
-                                    <a class="flex flex-col justify-center items-center" href="/">
+                                    <a class="flex flex-col justify-center items-center" href="/public/">
                                         <div class="font-semibold text-lime-500">Virtual</div>
                                         <div class="flex flex-row">
-                                            <div class="uppercase font-black text-red-600">v</div>
-                                            <div class="uppercase font-black text-yellow-400">k</div>
+                                            <div class="uppercase font-black text-yellow-600">v</div>
+                                            <div class="uppercase font-black text-red-600">k</div>
                                             <div class="uppercase font-black text-blue-600">u</div>
                                         </div>
                                     </a>

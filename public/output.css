@@ -681,6 +681,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 2rem;
 }
 
+.mt-\[130px\]{
+  margin-top: 130px;
+}
+
+.block{
+  display: block;
+}
+
 .flex{
   display: flex;
 }
@@ -721,20 +729,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 350px;
 }
 
+.h-\[900px\]{
+  height: 900px;
+}
+
 .h-\[150px\]{
   height: 150px;
 }
 
 .h-\[500px\]{
   height: 500px;
-}
-
-.h-\[660px\]{
-  height: 660px;
-}
-
-.h-\[600px\]{
-  height: 600px;
 }
 
 .h-\[550px\]{
@@ -759,10 +763,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .min-h-\[60px\]{
   min-height: 60px;
-}
-
-.min-h-\[80px\]{
-  min-height: 80px;
 }
 
 .w-6{
@@ -797,12 +797,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 95%;
 }
 
-.min-w-\[375px\]{
-  min-width: 375px;
-}
-
-.min-w-\[80px\]{
-  min-width: 80px;
+.min-w-\[350px\]{
+  min-width: 350px;
 }
 
 .min-w-\[200px\]{
@@ -811,10 +807,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .min-w-\[335px\]{
   min-width: 335px;
-}
-
-.min-w-\[350px\]{
-  min-width: 350px;
 }
 
 .max-w-screen-2xl{
@@ -963,6 +955,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-red-400{
   --tw-bg-opacity: 1;
   background-color: rgb(248 113 113 / var(--tw-bg-opacity));
+}
+
+.bg-slate-300{
+  --tw-bg-opacity: 1;
+  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
+}
+
+.bg-slate-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(148 163 184 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-50{
@@ -1246,6 +1248,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-black{
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.text-yellow-600{
+  --tw-text-opacity: 1;
+  color: rgb(202 138 4 / var(--tw-text-opacity));
 }
 
 .opacity-80{
@@ -1540,11 +1547,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(241 245 249 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-slate-300:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
-}
-
 .hover\:text-coffee-600:hover{
   --tw-text-opacity: 1;
   color: rgb(116 72 56 / var(--tw-text-opacity));
@@ -1558,11 +1560,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .hover\:text-lime-400:hover{
   --tw-text-opacity: 1;
   color: rgb(163 230 53 / var(--tw-text-opacity));
-}
-
-.hover\:text-gray-500:hover{
-  --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
 .hover\:opacity-10:hover{
